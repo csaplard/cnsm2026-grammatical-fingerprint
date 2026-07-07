@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 .venv/
 results/tmp/
+paper/main.aux
+paper/main.log
+paper/main.out
+paper/main.blg
