@@ -229,7 +229,9 @@ def main():
     for L in L_GRID:
         win, lab = eval_windows(MarkovClassifier(order=k, alphabet=a),
                                 ta_syms, L)  # windowing helper only
-        if win is None:
+        if win is None or min(len(s) for s in es_syms) < L:
+            # structurally unavailable at the frozen w: no test window or no
+            # early-stopping window of this length exists
             lstm_res[str(L)] = None
             continue
         model, val_acc = train_lstm(fit_syms, es_syms, alphabet=a, length=L,

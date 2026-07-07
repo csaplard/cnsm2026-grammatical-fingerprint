@@ -32,6 +32,16 @@ once. Note: at w=12, L∈{96} yields one window per element on Test-A and
 L=192 yields none; this is a structural consequence of the frozen choice
 and is reported as such.
 
+## Test-evaluation rerun note (transparency)
+
+The first run of src/evaluate.py after the freeze commit crashed at LSTM
+L=96 (the early-stopping segment, 84 symbols at the frozen w=12, cannot
+contain a 96-symbol window — same structural limitation already noted at
+the freeze). The fix skips structurally unavailable L values; **no model,
+hyperparameter, or selection was changed after seeing test results.** The
+script was rerun once to completion; Markov test numbers were identical
+across both runs (deterministic pipeline, seed 42).
+
 ## Dataset provenance (recorded before download)
 
 - Dataset: "Telecommunications - SMS, Call, Internet - MI", Harvard Dataverse,
