@@ -5,6 +5,7 @@ import json
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.ticker import NullFormatter
 import numpy as np
 
 from common import RESULTS
@@ -46,7 +47,8 @@ def fig_accuracy_vs_L(ev):
     ax.set_xscale("log")
     ax.set_xticks(ls)
     ax.set_xticklabels(ls)
-    ax.legend(fontsize=6, frameon=False)
+    ax.xaxis.set_minor_formatter(NullFormatter())
+    ax.legend(fontsize=6, frameon=False, loc="upper left")
     fig.tight_layout()
     fig.savefig(FIGS / "fig1_accuracy_vs_L.pdf")
 
@@ -81,13 +83,15 @@ def fig_drift(dr):
         alarm = dr["detectors"]["cusum"][nm]["alarm_hours_after_dec13"]
         if alarm is not None:
             ax.axvline(alarm / 24.0, color=colors[nm], ls="--", lw=0.7)
+    y0, y1 = ax.get_ylim()
+    ax.set_ylim(y0, y1 * 1.28)  # headroom for legend + annotations
     ax.axvline(8, color="k", lw=0.8)  # Dec 21 = Test-A/Test-B boundary
-    ax.text(8.1, ax.get_ylim()[1] * 0.95, "Test-B starts", fontsize=6, va="top")
+    ax.text(8.15, y0 + 0.04 * (y1 - y0), "Test-B\nstarts", fontsize=5.5, va="bottom")
     ax.axvline(12, color="gray", lw=0.8, ls=":")  # Dec 25
-    ax.text(12.1, ax.get_ylim()[1] * 0.85, "Dec 25", fontsize=6, va="top")
+    ax.text(12.15, y0 + 0.04 * (y1 - y0), "Dec 25", fontsize=5.5, va="bottom")
     ax.set_xlabel("days after 2013-12-13")
     ax.set_ylabel(r"aggregated $|z|$")
-    ax.legend(fontsize=6, frameon=False, ncol=2)
+    ax.legend(fontsize=5.5, frameon=False, ncol=2, loc="upper left")
     fig.tight_layout()
     fig.savefig(FIGS / "fig3_drift.pdf")
 

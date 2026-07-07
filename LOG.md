@@ -8,7 +8,27 @@ corresponding actions. Timestamps are local (Europe/Budapest).
 |---|------|--------------|--------------|
 | 1 | 2026-07-07 | Delivered starting prompt | Wrote pre-registered PLAN.md (commit `bed002b`) |
 | 2 | 2026-07-07 | **Rejected: plan incomplete** (H2 parameter mapping missing; H1/H3 confounded) | Revised plan: pre-registered H₀/B/C/Q/α mapping and consistency criterion; split held-out period into Test-A (H1, 2013-12-13..20) and Test-B (H3, 2013-12-21..end) (commit `aa73225`) |
-| 3 | 2026-07-07 | **Accepted**, conditional on clarification: AAFT surrogates must be generated from raw series, then SAX-discretized with frozen parameters | Confirmed (this was the design as written in PLAN.md). Proceeding: data acquisition, then training-set-only sweep. |
+| 3 | 2026-07-07 | **Accepted**, conditional on clarification: AAFT surrogates must be generated from raw series, then SAX-discretized with frozen parameters | Confirmed (this was the design as written in PLAN.md). Proceeded: data acquisition, then training-set-only sweep. |
+| 4 | 2026-07-07 | Authorized guestbook email (procedural; dataset requires an email per download) | Used csaplar.d@gmail.com; downloaded and verified all 62 files. |
+
+## Final results summary (single test evaluation, frozen config a=8/w=12/k=2)
+
+- **H1 (fingerprint): supported.** Test-A Markov accuracy far exceeds chance at
+  all N and L (N=50, L=48: 0.51 vs chance 0.02, permutation p<0.001).
+- **Surrogate control:** AAFT accuracy 0.139±0.034 — most identifiability is
+  temporal/grammatical, but a ~7×-chance marginal component remains.
+- **Volume confound:** mean-level baseline 0.46 (N=50), 0.85 (N=10) — an
+  independent, at small N stronger, fingerprint. The symbolic result is
+  volume-independent (post-normalization).
+- **H2 (scaling): inconsistent.** Measured N*<12 symbols vs predicted
+  400–2794; reported as inconsistency, mapping not adjusted.
+- **S1:** shallow Markov (0.51) > LSTM (0.21); sequence model unnecessary.
+- **H3 (drift): supported.** Symbolic drift leads raw drift by median 54 h
+  (95% CI 18–90 h).
+
+Deliverables: paper/main.pdf (IEEE, 4 pp, ≤5 limit), SUMMARY.md (plain-language),
+this repository. All 6 references verified real; prior scaling relation could
+not be located and is treated as a pre-registered proposal, not a citation.
 
 ## Resolved procedural question (guestbook)
 
