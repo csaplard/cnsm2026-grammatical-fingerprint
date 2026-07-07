@@ -10,15 +10,14 @@ corresponding actions. Timestamps are local (Europe/Budapest).
 | 2 | 2026-07-07 | **Rejected: plan incomplete** (H2 parameter mapping missing; H1/H3 confounded) | Revised plan: pre-registered H₀/B/C/Q/α mapping and consistency criterion; split held-out period into Test-A (H1, 2013-12-13..20) and Test-B (H3, 2013-12-21..end) (commit `aa73225`) |
 | 3 | 2026-07-07 | **Accepted**, conditional on clarification: AAFT surrogates must be generated from raw series, then SAX-discretized with frozen parameters | Confirmed (this was the design as written in PLAN.md). Proceeding: data acquisition, then training-set-only sweep. |
 
-## Open procedural question (blocking data download)
+## Resolved procedural question (guestbook)
 
 The Dataverse dataset is gated by a guestbook ("Privacy risk assessment",
 guestbook id 96) that requires an **email address** with each file download
-(no other fields, no custom questions). The agent's sandbox declined to
-submit the operator's email without explicit authorization. Data download
-is paused until the human states which email to use for the guestbook
-response. The analysis pipeline (SAX, Markov classifier, AAFT surrogates,
-sweep harness) was implemented in the meantime; no data has been seen.
+(no other fields, no custom questions). The agent paused and asked; the
+human authorized using csaplar.d@gmail.com (intervention #4, 2026-07-07,
+procedural — no technical content supplied). Download proceeded with that
+guestbook response.
 
 ## Dataset provenance (recorded before download)
 

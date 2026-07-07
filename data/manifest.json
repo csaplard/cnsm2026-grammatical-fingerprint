@@ -1,0 +1,90 @@
+{
+ "dataset": {
+  "doi": "doi:10.7910/DVN/EGZHFV",
+  "version": "1.3",
+  "license": "ODbL 1.0"
+ },
+ "files": {
+  "sms-call-internet-mi-2013-11-01.txt": {
+   "dataverse_file_id": 2674255,
+   "filesize": 322874887,
+   "md5_expected": "658c49f8e3c7910bd3bb2bafbf62cdce",
+   "md5_actual": "658c49f8e3c7910bd3bb2bafbf62cdce",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:19:00Z"
+  },
+  "sms-call-internet-mi-2013-11-02.txt": {
+   "dataverse_file_id": 2674265,
+   "filesize": 315164060,
+   "md5_expected": "d90f3512c4f278f78d875fb49fcb7191",
+   "md5_actual": "d90f3512c4f278f78d875fb49fcb7191",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:19:33Z"
+  },
+  "sms-call-internet-mi-2013-11-03.txt": {
+   "dataverse_file_id": 2674273,
+   "filesize": 313058344,
+   "md5_expected": "71bde0827182bb45ce6f4c708fe6b42e",
+   "md5_actual": "71bde0827182bb45ce6f4c708fe6b42e",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:20:04Z"
+  },
+  "sms-call-internet-mi-2013-11-04.txt": {
+   "dataverse_file_id": 2674282,
+   "filesize": 361097689,
+   "md5_expected": "151f85ab92fc0fea449ff19cb7e50a0a",
+   "md5_actual": "151f85ab92fc0fea449ff19cb7e50a0a",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:20:42Z"
+  },
+  "sms-call-internet-mi-2013-11-05.txt": {
+   "dataverse_file_id": 2674279,
+   "filesize": 372894401,
+   "md5_expected": "f8f22dfdce95bf66d6fa9f699afbdf5e",
+   "md5_actual": "f8f22dfdce95bf66d6fa9f699afbdf5e",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:21:26Z"
+  },
+  "sms-call-internet-mi-2013-11-06.txt": {
+   "dataverse_file_id": 2674283,
+   "filesize": 374625924,
+   "md5_expected": "1c4e7de6a559357560927796b5c63c06",
+   "md5_actual": "1c4e7de6a559357560927796b5c63c06",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:22:05Z"
+  },
+  "sms-call-internet-mi-2013-11-07.txt": {
+   "dataverse_file_id": 2674271,
+   "filesize": 373036285,
+   "md5_expected": "dc0fac4c7fccb4c3328a77f450230c5c",
+   "md5_actual": "dc0fac4c7fccb4c3328a77f450230c5c",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:22:41Z"
+  },
+  "sms-call-internet-mi-2013-11-08.txt": {
+   "dataverse_file_id": 2674261,
+   "filesize": 376123111,
+   "md5_expected": "e2c02fde5673256145b29eb73321ca12",
+   "md5_actual": "e2c02fde5673256145b29eb73321ca12",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:23:16Z"
+  },
+  "sms-call-internet-mi-2013-11-09.txt": {
+   "dataverse_file_id": 2674268,
+   "filesize": 332440742,
+   "md5_expected": "ceee41ef748750475d57f16770b0abe0",
+   "md5_actual": "ceee41ef748750475d57f16770b0abe0",
+   "status": "verified",
+   "n_intervals": 144,
+   "downloaded_utc": "2026-07-07T19:24:07Z"
+  }
+ }
+}
