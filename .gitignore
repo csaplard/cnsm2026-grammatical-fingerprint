@@ -1,0 +1,6 @@
+data/daily/
+data/raw/
+__pycache__/
+*.pyc
+.venv/
+results/tmp/
