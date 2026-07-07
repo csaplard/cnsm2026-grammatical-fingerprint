@@ -131,7 +131,10 @@ def main():
     agg_tr, agg_te = aggregate(per_el, names)
 
     result = {"frozen_config": sel, "window_h": WIN_H, "stride_h": STRIDE_H,
-              "test_period_start": "2013-12-13T00:00 local", "detectors": {}}
+              "test_period_start": "2013-12-13T00:00 local",
+              "signals_test": {nm: [float(v) for v in agg_te[nm]] for nm in names},
+              "signals_train": {nm: [float(v) for v in agg_tr[nm]] for nm in names},
+              "detectors": {}}
     for det_name, det in [("cusum", cusum), ("page_hinkley", page_hinkley)]:
         d = detect(agg_tr, agg_te, det)
         result["detectors"][det_name] = {
