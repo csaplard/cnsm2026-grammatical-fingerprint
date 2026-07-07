@@ -19,6 +19,19 @@ human authorized using csaplar.d@gmail.com (intervention #4, 2026-07-07,
 procedural — no technical content supplied). Download proceeded with that
 guestbook response.
 
+## Hyperparameter freeze (constraint 6)
+
+Training-set-only sweep (rolling-origin, 3 folds, PLAN.md grid) selected
+**alphabet a=8, PAA window w=12 samples (120 min), Markov order k=2**
+(mean validation accuracy 0.4533 at L=48, N=50, chance 0.02). LSTM
+architecture was fixed a priori (src/lstm.py); its only tuned setting is
+early stopping inside the training period. **All model selection is hereby
+frozen at this commit.** The next run of src/evaluate.py is the single
+test evaluation permitted by the plan; src/h3_drift.py is likewise run
+once. Note: at w=12, L∈{96} yields one window per element on Test-A and
+L=192 yields none; this is a structural consequence of the frozen choice
+and is reported as such.
+
 ## Dataset provenance (recorded before download)
 
 - Dataset: "Telecommunications - SMS, Call, Internet - MI", Harvard Dataverse,
