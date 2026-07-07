@@ -10,6 +10,7 @@ corresponding actions. Timestamps are local (Europe/Budapest).
 | 2 | 2026-07-07 | **Rejected: plan incomplete** (H2 parameter mapping missing; H1/H3 confounded) | Revised plan: pre-registered H₀/B/C/Q/α mapping and consistency criterion; split held-out period into Test-A (H1, 2013-12-13..20) and Test-B (H3, 2013-12-21..end) (commit `aa73225`) |
 | 3 | 2026-07-07 | **Accepted**, conditional on clarification: AAFT surrogates must be generated from raw series, then SAX-discretized with frozen parameters | Confirmed (this was the design as written in PLAN.md). Proceeded: data acquisition, then training-set-only sweep. |
 | 4 | 2026-07-07 | Authorized guestbook email (procedural; dataset requires an email per download) | Used csaplar.d@gmail.com; downloaded and verified all 62 files. |
+| 5 | 2026-07-07 | **Accepted** unverifiable prior-relation handling (keep as pre-registered proposal; documented deviation from the citation instruction stays in Limitations; human supplies no citations per pre-registration). Will provide a public GitHub URL as procedural data for the agent to push history and insert into the Disclosure Statement. | No citations added. Awaiting repo URL to push full history, verify root commit + freeze commit 760de0c on the remote, insert URL, and build the final camera-ready PDF. |
 
 ## Final results summary (single test evaluation, frozen config a=8/w=12/k=2)
 
